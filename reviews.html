@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- VibeCheck Reviews - Reviews Page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews | VibeCheck Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Website Header and Navigation -->
+    <header class="site-header">
+        <a class="logo" href="index.html">Vibe<span>Check</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="reviews.html">Reviews</a>
+            <a href="recommendations.html">Top Picks</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <p class="eyebrow">THE REVIEW LIBRARY</p>
+            <h1>Game <span>Reviews</span></h1>
+            <p>Check the ratings, explore different genres, and find your next game.</p>
+        </section>
+
+        <!-- Review Filters -->
+        <section class="section">
+            <div class="filter-section">
+                <h2>Browse by Genre</h2>
+                <p>Choose a category to filter the reviews.</p>
+
+                <div class="filter-buttons" aria-label="Filter reviews by genre">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All Games</button>
+                    <button class="filter-btn" data-filter="fps" aria-pressed="false">FPS</button>
+                    <button class="filter-btn" data-filter="battle-royale" aria-pressed="false">Battle Royale</button>
+                    <button class="filter-btn" data-filter="action-rpg" aria-pressed="false">Action RPG</button>
+                </div>
+
+                <p id="filter-status" class="filter-status" aria-live="polite">
+                    Showing all 6 games.
+                </p>
+            </div>
+
+            <!-- Review Cards -->
+            <div class="review-grid" id="review-grid">
+
+                <article class="review-card" data-category="fps">
+                    <img
+                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=85"
+                        alt="Gaming setup for competitive video games">
+                    <div class="card-content">
+                        <span class="tag">FPS / Tactical</span>
+                        <h2>Rainbow Six Siege</h2>
+                        <p class="rating">★★★★★ <strong>9/10</strong></p>
+                        <p>
+                            A tactical shooter where teamwork, operator choices,
+                            and destructible walls can decide every round.
+                        </p>
+                        <p class="verdict">Verdict: Excellent for competitive players.</p>
+                        <a class="text-link" href="https://www.ubisoft.com/game/rainbow-six/siege" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-category="battle-royale">
+                    <img
+                        src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=800&q=85"
+                        alt="Gaming controller on a desk">
+                    <div class="card-content">
+                        <span class="tag">Battle Royale</span>
+                        <h2>Fortnite</h2>
+                        <p class="rating">★★★★★ <strong>8.5/10</strong></p>
+                        <p>
+                            A colorful battle royale with quick matches,
+                            creative mechanics, and frequent updates.
+                        </p>
+                        <p class="verdict">Verdict: Great for casual and competitive play.</p>
+                        <a class="text-link" href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-category="fps">
+                    <img
+                        src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=800&q=85"
+                        alt="Colorful gaming keyboard">
+                    <div class="card-content">
+                        <span class="tag">FPS / Tactical</span>
+                        <h2>Valorant</h2>
+                        <p class="rating">★★★★★ <strong>8.5/10</strong></p>
+                        <p>
+                            Precise shooting and character abilities create
+                            strategic five-versus-five matches.
+                        </p>
+                        <p class="verdict">Verdict: A strong choice for ranked competition.</p>
+                        <a class="text-link" href="https://playvalorant.com/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-category="action-rpg">
+                    <img
+                        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=85"
+                        alt="Video game controller and gaming equipment">
+                    <div class="card-content">
+                        <span class="tag">Action RPG</span>
+                        <h2>Cyberpunk 2077</h2>
+                        <p class="rating">★★★★★ <strong>9/10</strong></p>
+                        <p>
+                            Explore Night City through story missions,
+                            character choices, and futuristic combat.
+                        </p>
+                        <p class="verdict">Verdict: Worth exploring for story-driven players.</p>
+                        <a class="text-link" href="https://www.cyberpunk.net/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-category="fps">
+                    <img
+                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=85"
+                        alt="Gaming monitor and computer setup">
+                    <div class="card-content">
+                        <span class="tag">FPS</span>
+                        <h2>Call of Duty</h2>
+                        <p class="rating">★★★★☆ <strong>8/10</strong></p>
+                        <p>
+                            Fast gunfights, a range of multiplayer modes,
+                            and action-focused matches.
+                        </p>
+                        <p class="verdict">Verdict: Good for players who enjoy fast action.</p>
+                        <a class="text-link" href="https://www.callofduty.com/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-category="action-rpg">
+                    <img
+                        src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=85"
+                        alt="Person playing a video game">
+                    <div class="card-content">
+                        <span class="tag">Action RPG</span>
+                        <h2>Elden Ring</h2>
+                        <p class="rating">★★★★★ <strong>9.5/10</strong></p>
+                        <p>
+                            A challenging fantasy adventure with exploration,
+                            demanding bosses, and deep character building.
+                        </p>
+                        <p class="verdict">Verdict: Excellent for players who enjoy a challenge.</p>
+                        <a class="text-link" href="https://en.bandainamcoent.eu/elden-ring/elden-ring" target="_blank" rel="noopener noreferrer">Official Website →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="no-results" class="no-results" hidden>
+                No games found in this category.
+            </p>
+        </section>
+    </main>
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+        <p>© 2026 VibeCheck Reviews | Created by Vernon Douglas</p>
+        <a href="about.html">Contact the Reviewer</a>
+    </footer>
+
+    <!-- JavaScript: Review Category Filters -->
+    <script>
+        // Find all filter buttons and review cards.
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const reviewCards = document.querySelectorAll(".review-card");
+        const filterStatus = document.getElementById("filter-status");
+        const noResults = document.getElementById("no-results");
+
+        // Run this function when a category button is clicked.
+        function filterReviews(category) {
+            let visibleCount = 0;
+
+            reviewCards.forEach(function(card) {
+                const cardCategory = card.dataset.category;
+
+                // Show all cards or only cards in the selected category.
+                if (category === "all" || cardCategory === category) {
+                    card.hidden = false;
+                    visibleCount++;
+                } else {
+                    card.hidden = true;
+                }
+            });
+
+            // Update the status message and empty results message.
+            filterStatus.textContent =
+                "Showing " + visibleCount + " game" +
+                (visibleCount === 1 ? "." : "s.");
+
+            noResults.hidden = visibleCount !== 0;
+
+            // Highlight the selected button.
+            filterButtons.forEach(function(button) {
+                const isActive = button.dataset.filter === category;
+                button.classList.toggle("active", isActive);
+                button.setAttribute("aria-pressed", isActive);
+            });
+        }
+
+        // Connect each button to the filter function.
+        filterButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                filterReviews(button.dataset.filter);
+            });
+        });
+    </script>
+
+</body>
+</html>
